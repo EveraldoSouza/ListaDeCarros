@@ -13,7 +13,6 @@ import com.example.everaldo.carros.constants.CarrosConstants;
 import com.example.everaldo.carros.data.CarMock;
 import com.example.everaldo.carros.entities.Car;
 import com.example.everaldo.carros.listener.OnListClickInteractionListener;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,20 +60,13 @@ public class MainActivity extends AppCompatActivity {
         CarsListAdapter carsListAdapter = new CarsListAdapter(carList, listener);
         this.mvViewHolder.recyclerCars.setAdapter(carsListAdapter);
 
-
         //DEFINIR UM LAYOUT
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         this.mvViewHolder.recyclerCars.setLayoutManager(linearLayoutManager);
 
-
     }
-
-
     //Class private ViewHolder
     private static class ViewHolder{
-
         RecyclerView recyclerCars;
-
-
     }
 }
