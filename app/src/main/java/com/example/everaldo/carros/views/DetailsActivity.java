@@ -43,7 +43,9 @@ public class DetailsActivity extends AppCompatActivity {
 
         //Responsavel por obter o valor passado por parametro
         this.getDataFromActivity();
-
+        
+        //Responsavel por atribuir os valores aos elementos de interface
+        this.setData();
 
     }
     //Responsavel por atribuir os valores aos elementos de interface
@@ -62,9 +64,6 @@ public class DetailsActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null){
             this.mCar = this.mCarMock.get(extras.getInt(CarrosConstants.CARRO_ID));
-
-            //Responsavel por atribuir os valores aos elementos de interface
-            this.setData();
         }
     }
 
