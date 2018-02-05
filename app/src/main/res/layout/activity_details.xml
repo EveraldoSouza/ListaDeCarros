@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beckgroud"
+    tools:context="com.example.everaldo.carros.views.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="515dp">
+
+        <ImageView
+            android:id="@+id/img_car_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/bugattichiron" />
+
+
+        <!--primeiro-->
+        <TextView
+            android:id="@+id/text_car_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_car_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Audi R8"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textColor="@color/colorBackLight"
+            android:textStyle="bold" />
+
+        <!--segundo-->
+        <TextView
+            android:id="@+id/text_manufacture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_car_model"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fabricante"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBackLight"/>
+
+        <!--terceiro-->
+        <TextView
+            android:id="@+id/text_horse_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_car_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="@string/cavalo1"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBackLight"/>
+
+        <!--quarto-->
+        <TextView
+            android:id="@+id/texto_cavalo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_horse_power"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cavalo1"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorBackLight"/>
+
+        <!--quinto-->
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_horse_power"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/preco"
+            android:textColor="@color/colorPrimary"
+            android:textSize="55sp" />
+
+        <!--sexto-->
+        <TextView
+            android:id="@+id/texto_preco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_price"
+            android:layout_centerHorizontal="true"
+            android:text="@string/preco"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorBackLight"/>
+
+    </RelativeLayout>
+</ScrollView>
